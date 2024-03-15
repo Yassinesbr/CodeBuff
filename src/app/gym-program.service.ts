@@ -12,4 +12,8 @@ export class GymProgramService {
   getGymPrograms(): Observable<any> {
     return this.http.get(this.gymProgramUrl);
   }
+
+  getProgramById(id: string): Observable<any> {
+    return this.http.get(`${this.gymProgramUrl}/${id}`);
+  }
 }

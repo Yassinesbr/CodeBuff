@@ -1,52 +1,92 @@
 {
   "gymPrograms": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Weight Loss",
-      "description": "A program designed to help you lose weight and get in shape.",
+      "description": "Tailored for effective weight loss, this program combines customized exercise routines and personalized meal plans over a duration of 3 months. Designed to help you shed excess pounds and achieve your fitness goals.",
+      "longDescription": "Our Weight Loss program is designed to provide you with comprehensive support on your journey to achieving your desired weight. Over the course of 3 months, you will work closely with our certified trainers and nutritionists to develop personalized exercise routines and meal plans tailored to your individual needs and goals. Whether you're looking to lose a few pounds or embark on a significant transformation, our program will equip you with the tools and knowledge necessary to succeed. From high-intensity interval training to mindful eating practices, we'll guide you every step of the way towards a healthier, happier you.",
       "duration": "3 months",
       "price": 100,
       "image": "https://images.pexels.com/photos/1954524/pexels-photo-1954524.jpeg"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Muscle Gain",
-      "description": "A program designed to help you gain muscle and get in shape.",
+      "description": "Focused on building muscle mass and strength, this program offers personalized training regimes and nutritional guidance spanning 6 months. Ideal for those aiming to sculpt a more muscular physique.",
+      "longDescription": "Our Muscle Gain program is perfect for individuals looking to pack on lean muscle mass and increase overall strength. With a duration of 6 months, this program provides ample time for progressive training and muscle hypertrophy. You'll work closely with our experienced trainers to develop customized workout routines that target specific muscle groups while also receiving expert nutritional guidance to fuel your gains. Whether you're a seasoned lifter or new to strength training, our program will help you achieve your desired physique and performance goals.",
       "duration": "6 months",
       "price": 120,
       "image": "https://images.pexels.com/photos/949129/pexels-photo-949129.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Body Building",
-      "description": "A program designed to help you build your body and get in shape.",
+      "description": "Intensive bodybuilding program designed to sculpt your physique and enhance strength over 3 months. With a focus on muscle hypertrophy and progressive training, you'll achieve noticeable gains.",
+      "longDescription": "Our Body Building program is designed for individuals serious about sculpting their physique and maximizing strength gains. Over the course of 3 months, you'll undergo an intensive training regimen that emphasizes muscle hypertrophy and progressive overload. Our expert trainers will guide you through a variety of exercises and techniques aimed at targeting specific muscle groups and optimizing your muscle growth potential. Additionally, you'll receive personalized nutritional guidance to support your training and enhance recovery. Whether you're a competitive bodybuilder or simply looking to build a stronger, more defined physique, our program will help you reach your goals.",
       "duration": "3 months",
       "price": 200,
       "image": "https://images.pexels.com/photos/1229356/pexels-photo-1229356.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Cardio",
-      "description": "A program designed to help you improve your cardio and get in shape.",
+      "description": "Enhance cardiovascular health and endurance with this comprehensive cardio program spanning 2 months. Featuring a variety of high-intensity workouts and aerobic exercises.",
+      "longDescription": "Our Cardio program is designed to boost your cardiovascular health and endurance levels in just 2 months. Through a combination of high-intensity interval training (HIIT), steady-state cardio, and aerobic exercises, you'll improve your heart health, increase your lung capacity, and burn calories more efficiently. Our experienced trainers will guide you through challenging workouts tailored to your fitness level, helping you push your limits and achieve your goals. Whether you're training for a race or simply want to improve your overall fitness, our program will help you get results.",
       "duration": "2 months",
       "price": 100,
       "image": "https://images.pexels.com/photos/3253501/pexels-photo-3253501.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "Yoga",
-      "description": "A program designed to help you improve your flexibility and get in shape.",
+      "description": "Improve flexibility, strength, and mental well-being with our yoga program over 3 months. Designed to cultivate mindfulness and inner balance through a series of poses and breathing exercises.",
+      "longDescription": "Our Yoga program offers a holistic approach to improving your physical and mental well-being over 3 months. Through a combination of asanas (poses), pranayama (breathing exercises), and meditation, you'll improve your flexibility, strength, and overall fitness while also reducing stress and promoting relaxation. Our certified yoga instructors will guide you through each session, ensuring proper alignment and technique to maximize the benefits of your practice. Whether you're a beginner or experienced yogi, our program will help you cultivate mindfulness, inner balance, and a deeper connection to your body and mind.",
       "duration": "3 months",
       "price": 100,
       "image": "https://images.pexels.com/photos/3823039/pexels-photo-3823039.jpeg"
     },
     {
-      "id": 6,
+      "id": "6",
       "name": "Pilates",
-      "description": "A program designed to help you improve your flexibility and get in shape.",
+      "description": "Strengthen your core, improve flexibility, and posture with our Pilates program over 3 months. Focused on controlled movements and body awareness to achieve a balanced, resilient body.",
+      "longDescription": "Our Pilates program is designed to help you strengthen your core, improve flexibility, and posture over the course of 3 months. By focusing on controlled movements and body awareness, you'll develop a balanced, resilient body that moves with ease and efficiency. Our certified Pilates instructors will guide you through a series of exercises using specialized equipment such as the reformer, cadillac, and barrel, as well as mat-based workouts. Whether you're recovering from an injury, looking to enhance athletic performance, or simply want to improve your overall fitness, our program will help you achieve your goals safely and effectively.",
       "duration": "3 months",
       "price": 100,
       "image": "https://images.pexels.com/photos/374101/pexels-photo-374101.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "userName": "admin",
+      "password": "admin",
+      "profile": {
+        "id": "1",
+        "firstName": "John",
+        "lastName": "Doe",
+        "image": "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "email": "test@test.com",
+        "programs": [
+          {
+            "id": "1",
+            "name": "Weight Loss",
+            "duration": "3 months",
+            "price": 100,
+            "image": "https://images.pexels.com/photos/1954524/pexels-photo-1954524.jpeg"
+          },
+          {
+            "id": "5",
+            "name": "Yoga",
+            "duration": "3 months",
+            "price": 100,
+            "image": "https://images.pexels.com/photos/3823039/pexels-photo-3823039.jpeg"
+          }
+        ]
+      }
+    },
+    {
+      "userName": "Jhon",
+      "password": "Jhon"
     }
   ]
 }

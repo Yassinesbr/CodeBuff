@@ -40,11 +40,13 @@ export class LoginComponent {
     console.log('Password', form.value.password);
 
     if (form.valid) {
-      this.authService.login().subscribe((isLoggedIn) => {
-        if (isLoggedIn) {
-          this.router.navigate(['/']);
-        }
-      });
+      this.authService
+        .login(form.value.username, form.value.password)
+        .subscribe((isLoggedIn) => {
+          if (isLoggedIn) {
+            this.router.navigate(['/']);
+          }
+        });
     }
   }
 }
