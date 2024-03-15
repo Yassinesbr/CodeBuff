@@ -1,0 +1,52 @@
+{
+  "gymPrograms": [
+    {
+      "id": 1,
+      "name": "Weight Loss",
+      "description": "A program designed to help you lose weight and get in shape.",
+      "duration": "3 months",
+      "price": 100,
+      "image": "https://images.pexels.com/photos/1954524/pexels-photo-1954524.jpeg"
+    },
+    {
+      "id": 2,
+      "name": "Muscle Gain",
+      "description": "A program designed to help you gain muscle and get in shape.",
+      "duration": "6 months",
+      "price": 120,
+      "image": "https://images.pexels.com/photos/949129/pexels-photo-949129.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "id": 3,
+      "name": "Body Building",
+      "description": "A program designed to help you build your body and get in shape.",
+      "duration": "3 months",
+      "price": 200,
+      "image": "https://images.pexels.com/photos/1229356/pexels-photo-1229356.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "id": 4,
+      "name": "Cardio",
+      "description": "A program designed to help you improve your cardio and get in shape.",
+      "duration": "2 months",
+      "price": 100,
+      "image": "https://images.pexels.com/photos/3253501/pexels-photo-3253501.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "id": 5,
+      "name": "Yoga",
+      "description": "A program designed to help you improve your flexibility and get in shape.",
+      "duration": "3 months",
+      "price": 100,
+      "image": "https://images.pexels.com/photos/3823039/pexels-photo-3823039.jpeg"
+    },
+    {
+      "id": 6,
+      "name": "Pilates",
+      "description": "A program designed to help you improve your flexibility and get in shape.",
+      "duration": "3 months",
+      "price": 100,
+      "image": "https://images.pexels.com/photos/374101/pexels-photo-374101.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    }
+  ]
+}
