@@ -16,6 +16,7 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent {
   loginForm!: FormGroup;
+  invalidCredentials = false;
 
   constructor(
     private formBuilder: FormBuilder,
@@ -35,16 +36,14 @@ export class LoginComponent {
   }
 
   onSubmit(form: FormGroup) {
-    console.log('Valid?', form.valid);
-    console.log('Username', form.value.username);
-    console.log('Password', form.value.password);
-
     if (form.valid) {
       this.authService
         .login(form.value.username, form.value.password)
         .subscribe((isLoggedIn) => {
           if (isLoggedIn) {
             this.router.navigate(['/']);
+          } else {
+            this.invalidCredentials = true;
           }
         });
     }

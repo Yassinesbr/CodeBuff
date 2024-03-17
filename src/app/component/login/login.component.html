@@ -36,6 +36,8 @@
         loginForm.get('password')?.dirty || loginForm.get('password')?.touched))
         {
         <div class="text-red-500 text-sm">Please provide a password.</div>
+        } @if (invalidCredentials && loginForm.get('password')?.valid) {
+        <div class="text-red-500 text-sm">Invalid credentials.</div>
         }
       </div>
       <button

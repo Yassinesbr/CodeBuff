@@ -1,11 +1,11 @@
 <div
   [routerLink]="['/programs', program.id]"
-  class="w-full bg-white shadow-md rounded-md cursor-pointer transition duration-300 ease-in-out transform hover:scale-105 h-460"
+  class="w-full bg-white shadow-md rounded-md cursor-pointer transition duration-300 ease-in-out transform hover:scale-105 h-full"
 >
   <img
     [src]="program.image"
     alt="program.name"
-    class="w-full h-40 object-cover"
+    class="w-full h-32 object-cover"
   />
   <div class="p-5">
     <h1 class="text-2xl font-bold text-gray-800">{{ program.name }}</h1>
