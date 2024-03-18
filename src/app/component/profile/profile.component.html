@@ -1,2 +1,27 @@
-<app-header></app-header>
-<p>profile works!</p>
+<div class="mt-6 grid grid-cols-4 gap-4">
+  <div class="mt-5">
+    <ul class="flex flex-col gap-4">
+      <li
+        [routerLink]="['/profile']"
+        class="text-lg font-semibold text-gray-600 cursor-pointer"
+      >
+        Profile
+      </li>
+      <li
+        [routerLink]="['/profile/programs']"
+        class="text-lg font-semibold text-gray-600 cursor-pointer"
+      >
+        Programs
+      </li>
+      <li
+        [routerLink]="['/profile/settings']"
+        class="text-lg font-semibold text-gray-600 cursor-pointer"
+      >
+        Settings
+      </li>
+    </ul>
+  </div>
+  <div class="col-span-3 border">
+    <router-outlet></router-outlet>
+  </div>
+</div>
