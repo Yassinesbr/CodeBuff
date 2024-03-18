@@ -9,7 +9,12 @@ import { AuthService } from '../../auth.service';
   templateUrl: './header.component.html',
 })
 export class HeaderComponent {
+  user: any;
   constructor(private authService: AuthService, private router: Router) {}
+
+  ngOnInit() {
+    this.user = this.authService.getCurrentUser();
+  }
 
   logout() {
     this.authService.logout();
