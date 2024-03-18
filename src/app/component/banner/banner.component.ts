@@ -9,11 +9,12 @@ import { UserService } from '../profile/user.service';
 })
 export class BannerComponent {
   showBanner = false;
-  @Input() message!: string;
+  message = '';
   constructor(private userService: UserService) {}
 
   ngOnInit() {
-    this.userService.userUpdated.subscribe(() => {
+    this.userService.userUpdated.subscribe((message) => {
+      this.message = message;
       this.showBanner = true;
       setTimeout(() => {
         this.showBanner = false;

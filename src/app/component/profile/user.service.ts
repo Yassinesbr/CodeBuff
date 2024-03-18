@@ -7,7 +7,7 @@ import { tap } from 'rxjs';
 })
 export class UserService {
   private usersUrl = 'http://localhost:5000/users';
-  userUpdated = new EventEmitter<void>();
+  userUpdated = new EventEmitter<string>();
 
   constructor(private http: HttpClient) {}
 
@@ -15,7 +15,7 @@ export class UserService {
     return this.http.put(`${this.usersUrl}/${user.id}`, user).pipe(
       tap(() => {
         localStorage.setItem('currentUser', JSON.stringify(user));
-        this.userUpdated.emit();
+        this.userUpdated.emit('infos updated successfully');
       })
     );
   }
