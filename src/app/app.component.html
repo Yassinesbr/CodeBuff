@@ -1,4 +1,6 @@
 <div class="w-8/12 mx-auto">
+  @if (authService.isLoggedIn()) {
   <app-header></app-header>
+  }
   <router-outlet></router-outlet>
 </div>

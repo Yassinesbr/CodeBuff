@@ -62,10 +62,10 @@
       "password": "admin",
       "profile": {
         "id": "1",
-        "firstName": "Test",
-        "lastName": "Update",
+        "firstName": "yassine",
+        "lastName": "et",
         "image": "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-        "email": "updateEmail@test.com",
+        "email": "dh@test.com",
         "programs": [
           {
             "id": "1",
