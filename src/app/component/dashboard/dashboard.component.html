@@ -1,5 +1,5 @@
 <app-header></app-header>
-<div class="w-8/12 mx-auto grid xl:grid-cols-3 gap-10 mt-8 sm:grid-cols-2">
+<div class="grid xl:grid-cols-3 gap-10 mt-8 sm:grid-cols-2">
   @for (program of gymPrograms; track $index) {
   <app-program-card [program]="program"></app-program-card>
   }
