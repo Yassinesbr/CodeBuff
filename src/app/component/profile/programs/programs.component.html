@@ -1,1 +1,6 @@
-<p>programs works!</p>
+<div class="p-5">
+  <h1 class="text-3xl font-bold text-blue-500 mb-5">Current Programs</h1>
+  @for (program of user.profile.programs; track $index) {
+  <app-program-vertical-card [program]="program"></app-program-vertical-card>
+  }
+</div>

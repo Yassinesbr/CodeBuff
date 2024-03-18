@@ -1,0 +1,20 @@
+<div
+  class="bg-slate-100 border-l-4 border-slate-500 text-slate-700 mt-5 hover:shadow-md transition duration-300 ease-in-out transform rounded-md"
+>
+  <div class="flex justify-between items-center">
+    <div class="flex items-center">
+      <img
+        [src]="program.image"
+        alt="program"
+        class="h-full w-32 object-cover rounded-md"
+      />
+      <p class="ml-5"></p>
+      <p class="text-2xl text-gray-800">
+        {{ program.name }}
+      </p>
+    </div>
+    <div class="p-4 cursor-pointer" (click)="removeProgram(program.id)">
+      <p class="text-red-500 font-bold text-xl">X</p>
+    </div>
+  </div>
+</div>

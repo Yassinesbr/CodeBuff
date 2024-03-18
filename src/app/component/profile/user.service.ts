@@ -19,4 +19,15 @@ export class UserService {
       })
     );
   }
+
+  deleteProgram(user: any, programId: string) {
+    return this.http
+      .delete(`${this.usersUrl}/${user.id}/programs/${programId}`)
+      .pipe(
+        tap(() => {
+          localStorage.setItem('currentUser', JSON.stringify(user));
+          this.userUpdated.emit('program deleted successfully');
+        })
+      );
+  }
 }
