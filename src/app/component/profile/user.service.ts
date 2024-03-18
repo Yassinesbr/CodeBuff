@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { Injectable } from '@angular/core';
+import { EventEmitter, Injectable } from '@angular/core';
 import { tap } from 'rxjs';
 
 @Injectable({
@@ -7,12 +7,15 @@ import { tap } from 'rxjs';
 })
 export class UserService {
   private usersUrl = 'http://localhost:5000/users';
+  userUpdated = new EventEmitter<void>();
+
   constructor(private http: HttpClient) {}
 
   updateUser(user: any) {
     return this.http.put(`${this.usersUrl}/${user.id}`, user).pipe(
       tap(() => {
         localStorage.setItem('currentUser', JSON.stringify(user));
+        this.userUpdated.emit();
       })
     );
   }

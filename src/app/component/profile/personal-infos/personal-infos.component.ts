@@ -7,11 +7,12 @@ import {
   Validators,
 } from '@angular/forms';
 import { UserService } from '../user.service';
+import { BannerComponent } from '../../banner/banner.component';
 
 @Component({
   selector: 'app-personal-infos',
   standalone: true,
-  imports: [ReactiveFormsModule],
+  imports: [ReactiveFormsModule, BannerComponent],
   templateUrl: './personal-infos.component.html',
 })
 export class PersonalInfosComponent {
